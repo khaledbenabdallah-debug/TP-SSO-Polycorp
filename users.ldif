@@ -1,0 +1,15 @@
+dn: uid=alice,ou=people,dc=polycorp,dc=local
+objectClass: inetOrgPerson
+uid: alice
+cn: Alice Martin
+sn: Martin
+givenName: Alice
+mail: alice@polycorp.local
+
+dn: uid=emma,ou=people,dc=polycorp,dc=local
+objectClass: inetOrgPerson
+uid: emma
+cn: Emma Durand
+sn: Durand
+givenName: Emma
+mail: emma@polycorp.local

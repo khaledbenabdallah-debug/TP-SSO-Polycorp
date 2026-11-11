@@ -1,0 +1,10 @@
+dn: cn=rh,ou=groups,dc=polycorp,dc=local
+objectClass: groupOfNames
+cn: rh
+member: uid=alice,ou=people,dc=polycorp,dc=local
+
+dn: cn=employes,ou=groups,dc=polycorp,dc=local
+objectClass: groupOfNames
+cn: employes
+member: uid=alice,ou=people,dc=polycorp,dc=local
+member: uid=emma,ou=people,dc=polycorp,dc=local

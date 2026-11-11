@@ -1,0 +1,6 @@
+dn: cn=svc-keycloak,dc=polycorp,dc=local
+objectClass: organizationalRole
+objectClass: simpleSecurityObject
+cn: svc-keycloak
+description: Compte de service Keycloak (lecture seule)
+userPassword: svc123

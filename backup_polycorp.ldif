@@ -1,0 +1,107 @@
+dn: dc=polycorp,dc=local
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: Polycorp
+dc: polycorp
+structuralObjectClass: organization
+entryUUID: b9999098-7176-1041-98cf-d1072bc0bac7
+creatorsName: cn=admin,dc=polycorp,dc=local
+createTimestamp: 20261110172009Z
+entryCSN: 20261110172009.512070Z#000000#000#000000
+modifiersName: cn=admin,dc=polycorp,dc=local
+modifyTimestamp: 20261110172009Z
+
+dn: ou=people,dc=polycorp,dc=local
+objectClass: organizationalUnit
+ou: people
+structuralObjectClass: organizationalUnit
+entryUUID: 077c2bd6-7177-1041-8b7e-c10895198f19
+creatorsName: cn=admin,dc=polycorp,dc=local
+createTimestamp: 20261110172220Z
+entryCSN: 20261110172220.181742Z#000000#000#000000
+modifiersName: cn=admin,dc=polycorp,dc=local
+modifyTimestamp: 20261110172220Z
+
+dn: ou=groups,dc=polycorp,dc=local
+objectClass: organizationalUnit
+ou: groups
+structuralObjectClass: organizationalUnit
+entryUUID: 077c8ee6-7177-1041-8b7f-c10895198f19
+creatorsName: cn=admin,dc=polycorp,dc=local
+createTimestamp: 20261110172220Z
+entryCSN: 20261110172220.184306Z#000000#000#000000
+modifiersName: cn=admin,dc=polycorp,dc=local
+modifyTimestamp: 20261110172220Z
+
+dn: uid=alice,ou=people,dc=polycorp,dc=local
+objectClass: inetOrgPerson
+uid: alice
+cn: Alice Martin
+sn: Martin
+givenName: Alice
+mail: alice@polycorp.local
+structuralObjectClass: inetOrgPerson
+entryUUID: 7e332280-717b-1041-8b80-c10895198f19
+creatorsName: cn=admin,dc=polycorp,dc=local
+createTimestamp: 20261110175417Z
+userPassword:: e1NTSEF9YytPczJ1TjVHNzlHbzhITmlxMTZZbFlzbWhyalhLWVQ=
+entryCSN: 20261110175445.548360Z#000000#000#000000
+modifiersName: cn=admin,dc=polycorp,dc=local
+modifyTimestamp: 20261110175445Z
+
+dn: uid=emma,ou=people,dc=polycorp,dc=local
+objectClass: inetOrgPerson
+uid: emma
+cn: Emma Durand
+sn: Durand
+givenName: Emma
+mail: emma@polycorp.local
+structuralObjectClass: inetOrgPerson
+entryUUID: 7e33968e-717b-1041-8b81-c10895198f19
+creatorsName: cn=admin,dc=polycorp,dc=local
+createTimestamp: 20261110175417Z
+userPassword:: e1NTSEF9QlNZWmE1VmdVQVJtbjBZanZwTWxxOWxOZWsxRkx1MTI=
+entryCSN: 20261110175508.406552Z#000000#000#000000
+modifiersName: cn=admin,dc=polycorp,dc=local
+modifyTimestamp: 20261110175508Z
+
+dn: cn=rh,ou=groups,dc=polycorp,dc=local
+objectClass: groupOfNames
+cn: rh
+member: uid=alice,ou=people,dc=polycorp,dc=local
+structuralObjectClass: groupOfNames
+entryUUID: 30bcaa70-7181-1041-8b82-c10895198f19
+creatorsName: cn=admin,dc=polycorp,dc=local
+createTimestamp: 20261110183504Z
+entryCSN: 20261110183504.358321Z#000000#000#000000
+modifiersName: cn=admin,dc=polycorp,dc=local
+modifyTimestamp: 20261110183504Z
+
+dn: cn=employes,ou=groups,dc=polycorp,dc=local
+objectClass: groupOfNames
+cn: employes
+member: uid=alice,ou=people,dc=polycorp,dc=local
+member: uid=emma,ou=people,dc=polycorp,dc=local
+structuralObjectClass: groupOfNames
+entryUUID: 30bcf2d2-7181-1041-8b83-c10895198f19
+creatorsName: cn=admin,dc=polycorp,dc=local
+createTimestamp: 20261110183504Z
+entryCSN: 20261110183504.360176Z#000000#000#000000
+modifiersName: cn=admin,dc=polycorp,dc=local
+modifyTimestamp: 20261110183504Z
+
+dn: cn=svc-keycloak,dc=polycorp,dc=local
+objectClass: organizationalRole
+objectClass: simpleSecurityObject
+cn: svc-keycloak
+description: Compte de service Keycloak (lecture seule)
+userPassword:: c3ZjMTIz
+structuralObjectClass: organizationalRole
+entryUUID: fef952c0-7182-1041-8b84-c10895198f19
+creatorsName: cn=admin,dc=polycorp,dc=local
+createTimestamp: 20261110184759Z
+entryCSN: 20261110184759.863226Z#000000#000#000000
+modifiersName: cn=admin,dc=polycorp,dc=local
+modifyTimestamp: 20261110184759Z
+
